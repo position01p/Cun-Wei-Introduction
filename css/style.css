@@ -1,9 +1,14 @@
 body{
-    font-family: Helvetica;
+    font-family: 'Noto Sans TC', sans-serif;
 
 }
 
-header{
+/*很重要，為了讓svg圖案能有超連結*/
+object{
+    pointer-events: none;
+}
+
+.div-header{
     position: fixed;
     z-index: 100;
     height:64px;
@@ -12,7 +17,7 @@ header{
     /*header設置flex並排列*/
     display: inline-flex;
     justify-content: space-between;
-
+    margin-top:-0.5rem;
 }
 
 #section{
@@ -505,7 +510,32 @@ header{
 
 /*section-2-start*/
     .sec2-left-part{
-        display: none;
+        width: 100%;
+        height: auto;
+    }
+
+    .sec2-left-part .photo{
+        margin: 2.5% auto;
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+
+    .sec2-left-part .word h1{
+        text-align: center;
+        color: rgb(59, 59, 59);
+    }
+
+    .sec2-left-part .word p{
+        margin: 0 2.2%;
+        text-align: left;
+        color: dimgray;
+    }
+
+    .sec2-left-part .photo img{
+        width: 100%;
+        height: auto;
+        display: block;
     }
 
     .desktop-sec2-right-part{
@@ -542,6 +572,10 @@ header{
 /*section-2-end*/
 
 /*section-3-start*/
+    #sec-3{
+        width: 100%;
+    }
+
     .section-3{
         color: rgb(59, 59, 59);
         /*position: relative;*/
