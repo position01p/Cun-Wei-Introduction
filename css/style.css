@@ -196,10 +196,12 @@ object{
     }
 
     .sec2-left-part .word h1{
+        font-size: 2.5rem;
         color: rgb(59, 59, 59);
     }
 
     .sec2-left-part .word p{
+        font-size: 1.25rem;
         color: rgb(59, 59, 59);
     }
 
@@ -213,12 +215,13 @@ object{
         height: auto;
         display:inline-flex;
         flex-direction: column;
+        justify-content: space-around;
     }
 
     .img-container{
         width: 35%;
         height: auto;
-        margin: 2.5% 5%;
+        margin: auto 5%;
 
     }
 
@@ -230,6 +233,7 @@ object{
 
     .desktop-sec2-right-part .container{
         display: inline-flex;
+        align-content: center;
         flex-wrap: nowrap;
 
     }
@@ -272,6 +276,20 @@ object{
     .section-3 .sec3-title h1{
         margin: 1em auto;
         color: rgb(59, 59, 59);
+        font-size: 2.5rem;
+    }
+
+    .section-3 .sec3-introduction{
+        width: 100%;
+        height: auto;
+        margin-bottom: 2%;
+    }
+
+    .sec3-introduction p{
+        margin: auto 5%;
+        padding-bottom: 2%;
+        font-size: 1.25rem;
+        color: rgb(59, 59, 59);
     }
 
     .section-3 .learning{
@@ -306,7 +324,7 @@ object{
 /*section-4*-start*/
     .section-4 {
         position: relative;
-        top: 64px;
+        /*top: 64px;*/
         display: flex;
         flex-wrap: wrap;
     }
@@ -392,6 +410,10 @@ object{
         height: auto;
         display: block;
         margin-left:5%;
+    }
+
+    .sec4-right-part .word ul{
+        color: rgb(59, 59, 59);
     }
 
     .sec4-right-part .word h2{
@@ -522,6 +544,7 @@ object{
     }
 
     .sec2-left-part .word h1{
+        font-size: 2.5rem;
         text-align: center;
         color: rgb(59, 59, 59);
     }
@@ -530,6 +553,7 @@ object{
         margin: 0 2.2%;
         text-align: left;
         color: dimgray;
+        font-size: 1.25rem;
     }
 
     .sec2-left-part .photo img{
@@ -561,7 +585,7 @@ object{
     .mobile-sec2-right-part .word{
         color: rgb(59, 59, 59);
         margin-left: 5%;
-        font-size: 1.5em;
+        font-size: 1.25em;
     }
 
     .mobile-sec2-right-part .word a{
@@ -583,6 +607,10 @@ object{
         text-align: center;
         width: 100%;
         height: auto;
+    }
+
+    .section-3 .sec3-title h1{
+        font-size: 2.5rem;
     }
 
     .section-3 .upper-container, .desktop{
@@ -639,6 +667,16 @@ object{
 /*section-4-end*/
 
 /*footer-start*/
+    .footer-container{
+        width: 100%;
+        height: auto;
+        display: inline-flex;
+        flex-wrap:nowrap ;
+        justify-content: space-between;
+        position: relative;
+        top:64px;
+
+    }
     .right-part{
         display: none;
     }
