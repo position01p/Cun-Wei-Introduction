@@ -498,16 +498,19 @@ object{
 
 .sec4-left-part .video{
     width: 90%;
-    height: auto;
-    overflow: hidden;
+    height: 30%;
     margin: auto;
+    text-align: center;
+
 }
 
-.sec4-container video{
+.video iframe{
     width: 100%;
-    height: auto;
-    display: block;
+    height: 100%;
+
 }
+
+
 
 .sec4-right-part .container-color{
     width: 100%;
@@ -778,7 +781,7 @@ object{
         }
     
         .sec1-2-left-part .word h1{
-            font-size: 2.5rem;
+            font-size: 2rem;
             text-align: center;
             color: rgb(59, 59, 59);
         }
@@ -816,10 +819,15 @@ object{
             height: auto;
         }
     
+        .mobile-sec1-2-right-part h2{
+            color: rgb(59, 59, 59);
+            font-size: 1.5rem;
+        }
+
         .mobile-sec1-2-right-part .word{
             color: rgb(59, 59, 59);
             margin-left: 5%;
-            font-size: 1.25em;
+            font-size: 1.25rem;
         }
     
         .mobile-sec1-2-right-part .word a{
@@ -941,7 +949,7 @@ object{
         margin-left: 5%;
         text-align: left;
         z-index: 2;
-        color:white
+        color:black;
     }
 
 
@@ -965,7 +973,7 @@ object{
         height: auto;
         z-index: 1;
         opacity: 0.7;
-        background-image: url('https://raw.githubusercontent.com/position01p/Cun-Wei-Introduction/main/images/sec-3-2-Photo/course-HTML-cut.jpg');
+        background-image: url('https://raw.githubusercontent.com/position01p/Cun-Wei-Introduction/main/images/sec-3-2-Photo/course-HTML-cut-opacity.jpg');
         background-repeat: no-repeat;
         background-position: 50% 0;
         background-size: cover;
@@ -979,7 +987,7 @@ object{
         height: auto;
         z-index: 1;
         opacity: 0.7;
-        background-image: url('https://assets.digitalocean.com/labs/images/community_bg.png');
+        background-image: url('https://raw.githubusercontent.com/position01p/Cun-Wei-Introduction/main/images/sec-3-2-Photo/curse-css-cut-opacity.jpg');
         background-repeat: no-repeat;
         background-position: 50% 0;
         background-size: cover;
@@ -993,7 +1001,7 @@ object{
         height: auto;
         z-index: 1;
         opacity: 0.7;
-        background-image: url('https://assets.digitalocean.com/labs/images/community_bg.png');
+        background-image: url('https://raw.githubusercontent.com/position01p/Cun-Wei-Introduction/main/images/sec-3-2-Photo/curse-JS-cut-opacity.jpg');
         background-repeat: no-repeat;
         background-position: 50% 0;
         background-size: cover;
@@ -1007,7 +1015,7 @@ object{
         height: auto;
         z-index: 1;
         opacity: 0.7;
-        background-image: url('https://assets.digitalocean.com/labs/images/community_bg.png');
+        background-image: url('https://raw.githubusercontent.com/position01p/Cun-Wei-Introduction/main/images/sec-3-2-Photo/curse-MySQL-cut-opacity.jpg');
         background-repeat: no-repeat;
         background-position: 50% 0;
         background-size: cover;
@@ -1021,7 +1029,7 @@ object{
         height: auto;
         z-index: 1;
         opacity: 0.7;
-        background-image: url('https://assets.digitalocean.com/labs/images/community_bg.png');
+        background-image: url('https://raw.githubusercontent.com/position01p/Cun-Wei-Introduction/main/images/sec-3-2-Photo/course-Python-cut-opacity.jpg');
         background-repeat: no-repeat;
         background-position: 50% 0;
         background-size: cover;
@@ -1035,7 +1043,7 @@ object{
         height: auto;
         z-index: 1;
         opacity: 0.7;
-        background-image: url('https://assets.digitalocean.com/labs/images/community_bg.png');
+        background-image: url('https://raw.githubusercontent.com/position01p/Cun-Wei-Introduction/main/images/sec-3-2-Photo/course-C%23-cut-opacity.jpg');
         background-repeat: no-repeat;
         background-position: 50% 0;
         background-size: cover;
@@ -1058,17 +1066,17 @@ object{
         }
 
         .sec4-left-part .video{
-            width: 95%;
+            width: 90%;
             height: auto;
-            overflow: hidden;
             margin: auto;
+            text-align: center;
         }
-    
-        .sec4-left-part .video video{
+        
+        .video iframe{
             width: 100%;
             height: auto;
-            display: block;
         }
+  
 
         .section-4 .sec4-container .autobiography{
             display: none;
