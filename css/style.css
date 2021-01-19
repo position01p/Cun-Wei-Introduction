@@ -1,6 +1,6 @@
-body{
+html{
     font-family: 'Noto Sans TC', sans-serif;
-
+    scroll-behavior: smooth;
 }
 
 /*很重要，為了讓svg圖案能有超連結*/
@@ -8,6 +8,12 @@ object{
     pointer-events: none;
 }
 
+/*開闔內容設定*/
+#sec-1-2{
+    display: none;
+}
+
+/*navigation*/
 .div-header{
     position: fixed;
     z-index: 100;
@@ -29,10 +35,12 @@ object{
 
 
 
-/*desktop*/
+
 @media only screen and (min-width:760px){
 /*Header-start*/
    
+
+
     header .mobile{
         display: none;
     }
@@ -66,10 +74,11 @@ object{
 
     header .desktop-right-part{
         display: inline-flex;
-        margin-right:24px;
+        margin-right:5%;
         height: 100%;
-        max-width: 700px;
-        min-width: 500px;
+        max-width: 1000px;
+        min-width: 480px;
+        
     }
 
 
@@ -80,7 +89,7 @@ object{
         /*重要*/list-style: none;
         height:auto;
         width:100%; 
-
+        
     }
 
     header .desktop-right-part li a{
@@ -110,6 +119,7 @@ object{
 
     .sec1-left-part .photo{
         margin:32px 24px;
+
     }
 
     .sec1-left-part img{
@@ -142,75 +152,102 @@ object{
         font-size: 1.25em;
     }
 
-    .sec1-right-part .button{
-        background-color: rgb(59, 59, 59) ;
+
+
+    #buttonOpen{
+        display:block;
+        background-color: gray ;
         text-align: center;
-        width: 100%;
+        width: 80%;
+        height:auto;
+        border-radius: 10px;
+        margin: 24px auto 32px auto;
         padding: 8px 0;
+        cursor: pointer;
+
+        color: white;
+        text-decoration: none;
+        font-size: 24px;
     }
 
-    .sec1-right-part .button a{
-        font-size: 24px;
-        text-decoration: none;
+    #buttonClose{
+        display:none;
+        background-color: gray ;
+        text-align: center;
+        width: 80%;
+        height:auto;
+        border-radius: 10px;
+        margin: 24px auto 32px auto;
+        padding: 8px 0;
+        cursor: pointer;
+
         color: white;
+        text-decoration: none;
+        font-size: 24px;
+    }
+
+    #buttonOpen:hover, #buttonClose:hover{
+        background-color: white;
+        color: dimgray;
+        font-weight: bold;
     }
 
 /*section-1-end*/
 
-/*section-2-start*/
-    .mobile-sec2-right-part{
+/*section-1-2-start*/    /*開闔內容*/
+    .mobile-sec1-2-right-part{
         display: none;
     }
 
-    .section-2{
+    .section-1-2{
         background-color: white;
         width: 100%;
         height: auto;
         display: inline-flex;
     }
 
-    .sec2-left-part{
+    .sec1-2-left-part{
         width: 60%;
         height: auto;
     }
 
 
-    .sec2-left-part .photo{
+    .sec1-2-left-part .photo{
         width: auto;
         height: auto;
         margin: 32px 24px 0 32px;
         overflow: hidden; 
     }
 
-    .sec2-left-part .photo img{
+    .sec1-2-left-part .photo img{
         width: 100%;
         height: auto;
         display: block;
     }
 
-    .sec2-left-part .word{
+    .sec1-2-left-part .word{
         width: auto;
         height: auto;
         padding-bottom:32px ;
         margin-left: 32px;
     }
 
-    .sec2-left-part .word h1{
+    .sec1-2-left-part .word h1{
         font-size: 2.5rem;
         color: rgb(59, 59, 59);
     }
 
-    .sec2-left-part .word p{
+    .sec1-2-left-part .word p{
         font-size: 1.25rem;
         color: rgb(59, 59, 59);
     }
 
-    .sec2-left-part .hiring-com{
+    .sec1-2-left-part .hiring-com{
         padding-top: 1rem;
     }
 
 
-    .desktop-sec2-right-part{
+    .desktop-sec1-2-right-part{
         width: 40%;
         height: auto;
         display:inline-flex;
@@ -225,13 +262,13 @@ object{
 
     }
 
-    .desktop-sec2-right-part img{
+    .desktop-sec1-2-right-part img{
         width:100%;
         height: auto;
         display: block;
     }
 
-    .desktop-sec2-right-part .container{
+    .desktop-sec1-2-right-part .container{
         display: inline-flex;
         align-content: center;
         flex-wrap: nowrap;
@@ -244,7 +281,7 @@ object{
         background-color: Gainsboro;
     }
 
-    .desktop-sec2-right-part .word{
+    .desktop-sec1-2-right-part .word{
         width: 65%;
         height: auto;
         overflow: hidden;
@@ -256,6 +293,39 @@ object{
         color: rgb(59, 59, 59);
     }
 
+/*section-1-2-end*/
+
+
+/*section-2-start*/
+    .section-2{
+        width: 100%;
+        height: auto;
+    }
+
+    .sec-2-title{
+        text-align: center;
+        color:rgb(59, 59, 59); 
+        width: 100%;
+        height: auto;
+    }
+
+    table{
+        width: 100%;
+    }
+
+    .section-2 td{
+        color:rgb(59,59,59);
+        border: 2px solid silver;
+    }    
+
+
+    .section-2 h2{
+        margin-left:5%;
+    }
+
+    .mobile-sec-2{
+        display:none;
+    }
 /*section-2-end*/
 
 /*section-3-start*/
@@ -265,6 +335,8 @@ object{
         height: auto;
         display: flex;
         flex-wrap: wrap;
+        margin: 10px 0 10px 0;
+        padding-bottom: 10px;
     }
 
     .section-3 .sec3-title{
@@ -288,141 +360,256 @@ object{
 
     .sec3-introduction p{
         font-size: 1.25rem;
-
     }
 
-    .section-3 .learning{
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .learning-items-1, .learning-items-2{
-        display: inline-flex;
-        margin:0 5% 2.5% 5%;
-    }
-
-    .section-3 .container{
-        width:50%;
-        height: auto;
-        margin: 1.5%;
-    }
-
-    .section-3 .below-container{
-        color: rgb(59, 59, 59);
-        margin: 5%;
-        font-size: 1em;
-    }
-
-    .section-3 img{
+    #sec-3 .introductSchedule{
         display: block;
         width: 100%;
+        height:auto;
+        margin:auto;
+        text-align: center;
     }
+
+    #sec-3 h2{
+        font-size: 1.5rem;
+        color: rgb(59,59,59);
+        margin: 1.5rem auto;
+    }
+     
+    /*schedule進度條*/
+    .schedule{
+        display:inline-flex;
+        width: 80%;
+        height: 50px;
+        margin: auto auto 20px auto;
+        /*border:2px solid red;*/
+    }
+
+    .schedule-photo{
+        display:block;
+        cursor:pointer;
+    }
+
+    .schedule-photo img{
+        width:100%;
+        height: auto;
+    }
+
+/*sec-3-2互動式部分*/
+    .section-3 .sec-3-2{
+        display: inline-flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height:auto;
+
+        
+    }
+
+    .sec-3-2 .container{
+        margin: auto;
+        width:90%;
+        height: 100%;
+
+    }
+
+    .sec-3-2 .photo-container{
+        display:block;
+        width: 40%;
+        height: auto;
+        overflow: hidden;
+        margin:auto;
+    }
+
+    .section-3 .photo-container img{
+        display: block;
+        width: 100%;
+        height:auto;
+    }
+
+    .section-3 .text-container{
+        width: 60%;
+        height: auto;
+        color: rgb(59, 59, 59);
+        font-size: 1em;
+        margin-left: 5%;
+    }
+
+    /*決定開闔部分*/
+    #sec-3-contain-1{
+        display:none;
+    }
+    #sec-3-contain-2{
+        display:none;
+    }
+    #sec-3-contain-3{
+        display:none;
+    }
+    #sec-3-contain-4{
+        display:none;
+    }
+    #sec-3-contain-5{
+        display:none;
+    }
+    #sec-3-contain-6{
+        display:none;
+    }
+
+
+
 
 /*section-3-end*/
 
-/*section-4*-start*/
-    .section-4 {
-        position: relative;
-        /*top: 64px;*/
-        display: flex;
-        flex-wrap: wrap;
-    }
+/*section-4-start*/
+.section-4 {
+    position: relative;
+    /*top: 64px;*/
+    display: flex;
+    flex-wrap: wrap;
+    border: 25px solid silver;
+}
 
-    .section-4 .sec4-title{
-        width: 100%;
-        height: auto;
-        text-align:center ;
-        color: rgb(59, 59, 59);
-    }
+.section-4 .sec4-title{
+    width: 100%;
+    height: auto;
+    text-align:center ;
+    color: rgb(59, 59, 59);
+}
 
-    .sec4-container{
-        display: inline-flex;
-    }
+.sec4-container{
+    display: inline-flex;
+}
 
-    .sec4-container .sec4-left-part {
-        width: 60%;
-        height: auto;
-    }
+.sec4-container .sec4-left-part {
+    width: 60%;
+    height: auto;
+}
 
-    .sec4-container .sec4-right-part{
-        width: 40%;
-        height: auto;
-    }
+.sec4-container .sec4-right-part{
+    width: 40%;
+    height: auto;
+}
 
-    .sec4-left-part .video{
-        width: 90%;
-        height: auto;
-        overflow: hidden;
-        margin: auto;
-    }
+.sec4-right-part{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+}
 
-    .sec4-container video{
-        width: 100%;
-        height: auto;
-        display: block;
-    }
+.sec4-left-part .video{
+    width: 90%;
+    height: auto;
+    overflow: hidden;
+    margin: auto;
+}
 
-    .sec4-right-part{
-        display: flex;
-        flex-wrap: wrap;
-        align-content: flex-start;
-        justify-content: center;
-    }
+.sec4-container video{
+    width: 100%;
+    height: auto;
+    display: block;
+}
 
-    .sec4-right-part .container-color{
-        width: 100%;
-        height: auto;
-        display: inline-flex;
-        background-color: lightgray;
-        padding:5% 5%;
-    }
+.sec4-right-part .container-color{
+    width: 100%;
+    height: auto;
+    display: inline-flex;
+    background-color: lightgray;
+    padding:5% 5%;
+}
 
-    .sec4-right-part .container{
-        width: 100%;
-        height: auto;
-        display: inline-flex;
-        padding:5% 5%;
-    }
+.sec4-right-part .container{
+    width: 100%;
+    height: auto;
+    display: inline-flex;
+    padding:5% 5%;
+}
 
-    .sec4-left-part .word{
-        width: 90%;
-        height: auto;
-        margin: auto;
-        color: rgb(59, 59, 59);
-    }
+.sec4-left-part .autobiography{
+    width: 90%;
+    height: auto;
+    margin: auto;
+    color: rgb(59, 59, 59);
+}
 
-    .sec4-right-part .photo{
-        width: 35%;
-        height: auto;
-        overflow: hidden;
-        margin: auto 0;
-    }
+.sec4-right-part .work-experiance{
+    width:90%;
+    height: auto;
+    display: block;
+    margin-left:5%;
+}
 
-    .sec4-right-part img{
-        width: 100%;
-        height: auto;
-        display: block;
-    }
+.sec4-right-part .work-experiance h2,.sec4-right-part .work-experiance p{
+    color: rgb(59, 59, 59);;
+}
 
-    .sec4-right-part .word{
-        width:65%;
-        height: auto;
-        display: block;
-        margin-left:5%;
-    }
+.sec4-right-part .work-experiance ul{
+    color: rgb(59, 59, 59);
+}
 
-    .sec4-right-part .word ul{
-        color: rgb(59, 59, 59);
-    }
+.sec4-right-part article p{
+    color:dimgray!important;
+}
 
-    .sec4-right-part .word h2{
-        color: rgb(59,59,59);
-    }
+.sec4-right-part .education{
+    width: 100%;
+    height: auto;
+    display:inline-flex;
+    flex-direction: column;
+    color: rgb(59,59,59);
+}
 
-    .sec4-right-part .word p{
-        color:dimgray;
-    }
+.sec4-right-part .education .photoAndTitle{
+    display: inline-flex;
+    text-align: center;
+    color:rgb(59,59,59);
+}
+
+.education-photo{
+    display: block;
+    margin: 2.5%;
+}
+
+.education-photo img{
+    width: 100%;
+    height: auto;
+}
+
+.education h2{
+    margin:auto auto auto 2.5%;
+    text-align: center;
+
+}
+
+.sec4-right-part .education p{
+    color:dimgray;
+    margin-left: 2.5%;
+}
 /*section-4-end*/
+
+
+/*section-5-start*/
+.section-5{
+    width: 100%;
+    height: auto;
+    color: rgb(59, 59, 59);
+}
+
+.section-5 h1{
+    text-align: center;
+}
+
+.section-5 .contectMe{
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: 2.5%;
+}
+
+.section-5 .phone{
+    margin-left: 5%;
+}
+/*section-5-end*/
 
 /*footer-start*/
     .footer-container{
@@ -433,6 +620,7 @@ object{
         justify-content: space-between;
         position: relative;
         top:64px;
+        background-color: lightgray;
 
     }
 
@@ -450,262 +638,566 @@ object{
 /*footer-end*/
 }
 
+/*半個desktop*/ /*760px~1080px*/
+
+
 /*mobile*/
 @media only screen and (max-width:760px){
-/*Header-start*/
-    .desktop-logo-part{
-        display: none;
-    }
+    /*Header-start*/
+        .desktop-logo-part{
+            display: none;
+        }
+    
+        .desktop-right-part{
+            display: none;
+        }
+    
+        .mobile{
+            height: 100%;
+            width: 100%;
+            display: inline-flex;
+            justify-content: space-around;
+        }
+    
+        .mobile span{
+            /*將裏頭的object高度置中*/
+            display: inline-flex;
+            flex-direction: column;
+            justify-content: center;
+            width: auto;
+            height: 90%;
 
-    .desktop-right-part{
-        display: none;
-    }
+        }
 
-    .mobile{
-        height: 100%;
-        width: 100%;
+        .mobile a{
+            width: auto;
+            height: 100%;
+        }
+
+        .mobile span .svg-link{
+            width: auto;
+            height: 50%;
+            margin-top: 50%;
+  
+        }
+    
+    /*section-1-start*/
+        .section-1{
+            /*position: relative;*/
+            /*top:64px;*/
+            background-color: silver;
+            display:flex;
+            flex-wrap: wrap;
+            width:100%;
+            height: auto;
+        }
+        
+        .section-1 img{
+            display: block;
+            width:100%;
+            height: auto;
+        }
+    
+        .section-1 .sec1-right-part{
+            width:100%;
+            text-align: left;
+            display: flex;
+            flex-wrap: wrap;
+            color: rgb(59, 59, 59);
+            margin-left: 16px;
+        }
+    
+        .section-1 .sec1-right-part h1{
+            font-size: 2rem;
+            font-weight: bold;
+            text-align: left;
+            margin: 5% auto auto auto;
+        }
+
+        .section-1 .sec1-right-part h1.second{
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-align: left;
+            margin: 5% auto auto auto;
+        }
+    
+        .section-1 .sec1-right-part p{
+            font-size: 1.25rem;
+        }
+    
+        .section-1 .sec1-right-part #sohwContent{
+            display:none;
+            font-size: 24px;
+        }
+    
+        .sec1-right-part #buttonOpen{
+            display:block;
+            background-color: gray ;
+            text-align: center;
+            width: 100%;
+            height:auto;
+            border-radius: 10px;
+            margin: 24px auto 32px auto;
+            padding: 8px 0;
+    
+            color: white;
+            text-decoration: none;
+            font-size: 24px;
+        }
+    
+        #buttonClose{
+            display:none;
+            background-color: gray ;
+            text-align: center;
+            width: 80%;
+            height:auto;
+            border-radius: 10px;
+            margin: 24px auto 32px auto;
+            padding: 8px 0;
+    
+            color: white;
+            text-decoration: none;
+            font-size: 24px;
+        }
+    
+    
+    
+    /*section-1-end*/
+    
+    /*section-1-2-start*/
+        .sec1-2-left-part{
+            width: 100%;
+            height: auto;
+        }
+    
+        .sec1-2-left-part .photo{
+            margin: 2.5% auto;
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+        }
+    
+        .sec1-2-left-part .word h1{
+            font-size: 2.5rem;
+            text-align: center;
+            color: rgb(59, 59, 59);
+        }
+    
+        .sec1-2-left-part .word p{
+            margin: 0 2.2%;
+            text-align: left;
+            color: dimgray;
+            font-size: 1.25rem;
+        }
+    
+        .sec1-2-left-part .photo img{
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    
+        .desktop-sec1-2-right-part{
+            display: none;
+        }
+    
+        .mobile-sec1-2-right-part{
+            /*position: relative;*/
+            /*top:64px;*/
+        }
+    
+        .mobile-sec1-2-right-part .container{
+            margin: 2.5%;
+            overflow: hidden;
+        }
+    
+        .mobile-sec1-2-right-part img{
+            display: none;
+            width: 100%;
+            height: auto;
+        }
+    
+        .mobile-sec1-2-right-part .word{
+            color: rgb(59, 59, 59);
+            margin-left: 5%;
+            font-size: 1.25em;
+        }
+    
+        .mobile-sec1-2-right-part .word a{
+            text-decoration: none;
+            color: rgb(59, 59, 59);
+        }
+    
+    /*section-1-2-end*/
+    
+    /*section-2-start*/
+        #sec-2 > div.desktop-sec-2{
+            display: none;
+        }
+
+        #sec-2 {
+            background-color: rgb(240, 240, 240);
+        }
+
+        .sec-2-title{
+            text-align: center;
+            color:rgb(59, 59, 59); 
+            width: 100%;
+            height: auto;
+        }
+
+        .section-2 li,.section-2 p{
+            margin-left:5%;
+            color:rgb(59,59,59);
+        }    
+    
+    
+        .section-2 h2{
+            margin-left:5%;
+            color:rgb(59,59,59);
+        }
+
+    /*section-2-end*/
+
+    /*section-3-start*/
+        #sec-3{
+            width: 100%;
+        }
+    
+        .section-3{
+            
+            /*position: relative;*/
+            /*top: 64px;*/
+            text-align: center;
+            width: 100%;
+            height: auto;
+        }
+    
+        .section-3 .sec3-title h1{
+            color: rgb(59, 59, 59);
+            font-size: 2.5rem;
+        }
+    
+        .section-3 .sec3-introduction{
+         display: none;
+        }
+
+        #sec-3 .introductSchedule{
+            display: block;
+            width: 100%;
+            height:auto;
+            margin:auto;
+            text-align: center;
+            color: rgb(59, 59, 59);
+        }
+    
+        #sec-3 h2{
+            font-size: 1.5rem;
+            margin: 1.5rem auto;
+        }
+
+        .schedule{
+            display:inline-flex;
+            width: 100%;
+            height: 50px;
+            margin: auto auto 20px auto;
+            /*border:2px solid red;*/
+        }
+    
+        .schedule-photo{
+            display:block;
+            cursor:pointer;
+        }
+    
+        .schedule-photo img{
+            width:100%;
+            height: auto;
+        }
+
+
+        /*sec-3-2互動式部分*/
+    .section-3 .sec-3-2{
         display: inline-flex;
-        justify-content: space-around;
-    }
-
-    .mobile span{
-        /*將裏頭的object高度置中*/
-        display: flex;
-        flex-direction: column;
-        justify-content: center;        
-    }
-
-/*section-1-start*/
-    .section-1{
-        /*position: relative;*/
-        /*top:64px;*/
-        background-color: silver;
-        display:flex;
         flex-wrap: wrap;
-        width:100%;
+        width: 100%;
+        height:auto;
+    }
+
+    .sec-3-2 .container{
+        margin: auto;
+        width:90%;
+        height: 100%;
+
+    }
+
+    .sec-3-2 .photo-container{
+        display:none      
+    }
+
+    .section-3 .text-container{
+        position: relative;
+        width: 90%;
         height: auto;
+        font-size: 1em;
+        margin-left: 5%;
+        text-align: left;
+        z-index: 2;
+        color:white
+    }
+
+
+    #sec-3 .sec3-2  h2{
+        color:white;
+    }
+
+    .sec-3-2 .container img{
+        position:none;
+
+    }
+
+
+    /*決定開闔部分*/
+    #sec-3-contain-1{
+        display:none;
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: auto;
+        z-index: 1;
+        opacity: 0.7;
+        background-image: url('https://assets.digitalocean.com/labs/images/community_bg.png');
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        background-size: cover;
+    }
+    #sec-3-contain-2{
+        display:none;
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: auto;
+        z-index: 1;
+        opacity: 0.7;
+        background-image: url('https://assets.digitalocean.com/labs/images/community_bg.png');
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        background-size: cover;
+    }
+    #sec-3-contain-3{
+        display:none;
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: auto;
+        z-index: 1;
+        opacity: 0.7;
+        background-image: url('https://assets.digitalocean.com/labs/images/community_bg.png');
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        background-size: cover;
+    }
+    #sec-3-contain-4{
+        display:none;
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: auto;
+        z-index: 1;
+        opacity: 0.7;
+        background-image: url('https://assets.digitalocean.com/labs/images/community_bg.png');
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        background-size: cover;
+    }
+    #sec-3-contain-5{
+        display:none;
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: auto;
+        z-index: 1;
+        opacity: 0.7;
+        background-image: url('https://assets.digitalocean.com/labs/images/community_bg.png');
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        background-size: cover;
+        }
+    #sec-3-contain-6{
+        display:none;
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: auto;
+        z-index: 1;
+        opacity: 0.7;
+        background-image: url('https://assets.digitalocean.com/labs/images/community_bg.png');
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        background-size: cover;
     }
     
-    .section-1 img{
-        display: block;
-        width:100%;
-        height: auto;
-    }
+    /*section-3-end*/
+    
+    /*section-4-start*/
+        .section-4{
+            position: relative;
+            top: 64px;
+            background-color: rgb(240, 240, 240);
+        }
 
-    .section-1 .sec1-right-part{
-        width:100%;
-        text-align: left;
-        display: flex;
-        flex-wrap: wrap;
-        color: rgb(59, 59, 59);
-        margin-left: 16px;
-    }
+        .section-4 .sec4-title{
+            width: 100%;
+            height: auto;
+            text-align: center;
+            color: rgb(59,59,59);
+        }
 
-    .section-1 .sec1-right-part h1{
-        font-size: 48px;
-        font-weight: bold;
-        text-align: left;
-        margin: 32px auto;
-    }
+        .sec4-left-part .video{
+            width: 95%;
+            height: auto;
+            overflow: hidden;
+            margin: auto;
+        }
+    
+        .sec4-left-part .video video{
+            width: 100%;
+            height: auto;
+            display: block;
+        }
 
-    .section-1 .sec1-right-part p{
-        font-size: 24px;
-    }
+        .section-4 .sec4-container .autobiography{
+            display: none;
+        }
 
-    .sec1-right-part .button{
-        background-color: gray ;
-        text-align: center;
-        width: 80%;
-        height:auto;
-        margin: 24px auto 32px auto;
-        padding: 8px 0;
-    }
+        .sec4-right-part .work-experiance{
+            width:100%;
+            height: auto;
+            display: block;
+            padding-bottom: 5%;
+            border-top: 5px solid silver;
+            border-bottom: 5px solid silver;
+        }
 
-    .sec1-right-part .button a{
-        color: white;
-        text-decoration: none;
-        font-size: 24px;
-    }
-/*section-1-end*/
+        .sec4-right-part .work-experiance h2,.sec4-right-part .work-experiance p{
+            color: rgb(59, 59, 59);
+            margin-left:10%;
+        }
+        
+        .sec4-right-part .work-experiance ul{
+            color: rgb(59, 59, 59);
+        }
+
+        
+        .work-experiance div{
+            width: 60%;
+            height: auto;
+            text-align: center;
+            right: 10px;
+        }
+        
+        .sec4-right-part article p{
+            color:dimgray!important;
+        }
+        
+        .sec4-right-part .education{
+            width: 100%;
+            height: auto;
+            display:inline-flex;
+            flex-direction: column;
+            color: rgb(59,59,59);
+        }
+        
+        .sec4-right-part .education .photoAndTitle{
+            display: inline-flex;
+            text-align: center;
+            color:rgb(59,59,59);
+        }
+        
+        .education-photo{
+            display: block;
+            margin: 2.5%;
+        }
+        
+        .education-photo img{
+            width: 75%;
+            height: auto;
+        }
+        
+        .education h2{
+            margin:auto auto auto 2.5%;
+            text-align: center;
+        
+        }
+        
+        .sec4-right-part .education p{
+            color:dimgray;
+            margin-left: 2.5%;
+        }
 
 
-/*section-2-start*/
-    .sec2-left-part{
-        width: 100%;
-        height: auto;
-    }
+        
+    /*section-4-end*/
 
-    .sec2-left-part .photo{
-        margin: 2.5% auto;
-        width: 100%;
-        height: auto;
-        overflow: hidden;
-    }
+    /*section-5-start*/
+        .section-5{
+            position:relative;
+            top: 64px;
+            width: 100%;
+            height: auto;
+            color: rgb(59, 59, 59);
+            background-color: lightgray;
+            border-top: 15px solid white;
+        }
 
-    .sec2-left-part .word h1{
-        font-size: 2.5rem;
-        text-align: center;
-        color: rgb(59, 59, 59);
-    }
+        .section-5 h1{
+            text-align: center;
+        }
 
-    .sec2-left-part .word p{
-        margin: 0 2.2%;
-        text-align: left;
-        color: dimgray;
-        font-size: 1.25rem;
-    }
+        .section-5 .contectMe{
+            display: inline-flex;
+            justify-content: center;
+            width: 100%;
+            height: auto;
+            margin-bottom: 2.5%;
+        }
 
-    .sec2-left-part .photo img{
-        width: 100%;
-        height: auto;
-        display: block;
-    }
-
-    .desktop-sec2-right-part{
-        display: none;
-    }
-
-    .mobile-sec2-right-part{
-        /*position: relative;*/
-        /*top:64px;*/
-    }
-
-    .mobile-sec2-right-part .container{
-        margin: 2.5%;
-        overflow: hidden;
-    }
-
-    .mobile-sec2-right-part img{
-        display: block;
-        width: 100%;
-        height: auto;
-    }
-
-    .mobile-sec2-right-part .word{
-        color: rgb(59, 59, 59);
-        margin-left: 5%;
-        font-size: 1.25em;
-    }
-
-    .mobile-sec2-right-part .word a{
-        text-decoration: none;
-        color: rgb(59, 59, 59);
-    }
-
-/*section-2-end*/
-
-/*section-3-start*/
-    #sec-3{
-        width: 100%;
-    }
-
-    .section-3{
-        color: rgb(59, 59, 59);
-        /*position: relative;*/
-        /*top: 64px;*/
-        text-align: center;
-        width: 100%;
-        height: auto;
-    }
-
-    .section-3 .sec3-title h1{
-        font-size: 2.5rem;
-    }
-
-    .section-3 .upper-container, .desktop{
-     display: none;
-    }
-
-    .section-3 .container{
-        background-color: lightgray;
-        width: 100%;
-        height: auto;
-        text-align: left;
-        margin: 1.5% 0;
-    }
-
-    .section-3 .below-container{
-        width: 100%;
-        height: auto;
-        padding-bottom: 0.5rem ;
-    }
-
-    .section-3 .container h2{
-        margin: 0;
-        padding: 2.5% 0 2.5% 0;
-    }
-
-    .section-3 .container p{
-        widows: 100%;
-        height: auto;
-        margin: 0 0.5rem 0.5rem 0.5rem;
-        background-color: rgb(192, 192, 192);
-    }
-
-    .section-3 .below-container h2{
-        padding-left: 2.5%;
-    }
-
-/*section-3-end*/
-
-/*section-4-start*/
-    .section-4 .sec4-title{
-        width: 100%;
-        height: auto;
-        text-align: center;
-        color: rgb(59,59,59);
-    }
-
-    .section-4 .sec4-container .word{
-        display: none;
-    }
-
-    .section-4 .sec4-right-part{
-        display: none;
-    }
-
-    .section-4{
-        position: relative;
-        top: 64px;
-    }
-
-    .sec4-left-part .video{
-        width: 100%;
-        height: auto;
-        overflow: hidden;
-    }
-
-    .sec4-left-part .video video{
-        width: 100%;
-        height: auto;
-        display: block;
-    }
-/*section-4-end*/
-
-/*footer-start*/
-    .footer-container{
-        width: 100%;
-        height: auto;
-        display: inline-flex;
-        flex-wrap:nowrap ;
-        justify-content: space-between;
-        position: relative;
-        top:64px;
-
-    }
-    .right-part{
-        display: none;
-    }
-
-    .left-part{
-        width: 100%;
-        height: auto;
-        position: relative;
-        top: 64px;
-
-        color: rgb(59,59,59);
-        padding:5% 5%;
-    }
-/*footer-end*/
-    }
+        .section-5 .phone{
+            margin-left: 5%;
+        }
+/*section-5-end*/
+    
+    /*footer-start*/
+        .footer-container{
+            width: 100%;
+            height: auto;
+            display: inline-flex;
+            flex-wrap:nowrap ;
+            justify-content: space-between;
+            position: relative;
+            top:64px;
+    
+        }
+        .right-part{
+            display: none;
+        }
+    
+        .left-part{
+            width: 100%;
+            height: auto;
+            position: relative;
+            top: 64px;
+    
+            color: rgb(59,59,59);
+            padding:5% 5%;
+        }
+        /*footer-end*/
+        }
+    
+    
+    
 
