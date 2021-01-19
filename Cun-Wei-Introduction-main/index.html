@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--
+        sec-1保留原樣，將內文改為簡介，即原本的轉職簡介。
+        sec-2改名為"sec-1-2"，包括CSS改編，內容為這3個月寫的東西。
+        新增sec-2內容寫專長，使用滑過(或點擊)顯示。
+        sec-3分為二部分，一部分為長久顯示的簡介，改名為"sec-3.1"，一部分點擊後的顯示，改名為"sec-3.2"。全都納在sec-3內。
+    -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <title>朱春威的履歷</title>
+</head>
+<body>
+    <header>
+        <!--desktop version-->
+        <div class="div-header">
+            <div class="desktop-logo-part">
+                <object data="images/ic-logo.svg" type="image/svg+xml"></object>
+                <span class="dimgray"><p> 春威</p></span>
+                <span class="silver"><p>的履歷</p></span>
+            </div>
+            <nav class="desktop-right-part">
+                <ul>
+                    <li><a href="#sec-1-1">簡介</a></li>
+                    <li><a href="#sec-2">專長</a></li>
+                    <li><a href="#sec-3">未來規劃目標</a></li>
+                    <li><a href="#sec-4">關於我</a></li>
+                    <li><a href="#sec-5">聯絡我</a></li>
+                </ul>
+            </nav>
+        
+            <!--mobile version-->
+            <div class="mobile">
+                <span><a href="#sec-1-1"><object class="svg-link" data="./images/Introduction.svg" type="image/svg+xml"></object></a></span>
+                <span><a href="#sec-2"><object class="svg-link" data="./images/Skill.svg" type="image/svg+xml"></object></a></span>
+                <span><a href="#sec-3"><object class="svg-link" data="./images/Goal.svg" type="image/svg+xml"></object></a></span>
+                <span><a href="#sec-4"><object class="svg-link" data="./images/ic-login.svg" type="image/svg+xml"></object></a></span>
+                <span><a href="#sec-5"><object class="svg-link" data="./images/ContactME.svg" type="image/svg+xml"></object></a></span>
+            </div>
+        </div>
+    </header>
+
+<!--內文-->
+  <div id=section>
+
+<!--section-1-->
+    <!--section-1-1-->
+    <div id="sec-1-1" >
+        <div class="1080">
+            <div class="section-1">
+                <div class="sec1-left-part">
+                    <div class="photo">
+                    <img src="./images/banner-funny-happy.jpg"></image>
+                    </div>
+                </div>
+                                                                                                                                                                                                                
+                <div class="sec1-right-part">
+                    <h1>歡迎</h1>
+                    <p>我是<b>朱春威</b>，這份簡歷將說明我的個性、專業及經歷。此網頁是RWD（<b>響應式網頁</b>）設計，在依顯示器大小有不同顯示方式，內容也會做更動。</p>
+                    <h1 class="second">決定當個工程師</h1>
+                    <span><p>從上份工作辭職起，開始挖掘我人生的興趣。三個多月過去，決定要將興趣作為能具有生產價值的事</p></span>
+                    <div id="sohwContent"> </div>
+                    
+                    <button id="buttonOpen">點擊顯示此3個月所學</button>
+                    
+                </div>
+            </div>
+        </div>
+
+    
+
+    <!--section-1-2-->
+        <div id="sec-1-2">
+            <div class="section-1-2">
+                <div class="sec1-2-left-part">
+                    <div class="photo">
+                        <img src="./images/sect-1-2-Photo/concentrated-girl-surrounded-by-books.jpg">
+                    </div>
+                    <div class="word">
+                        <h1>當網頁工程師的起因是...</h1>
+                        <span>
+                            <p>一開始只是想做自己的形象網頁，所以嘗試，也從中找到自己的興趣。在不斷試誤、學習及請教中，終於有了一點成果。從無到有的耕耘，那才是自己能體會、瞭解及感到欣喜的過程。所謂滴水能穿石，這也是我從開始學程式最主要的策略及行程，選擇對自己的興趣保持彈性，這樣才跑得久且長。</p>
+                        </span>
+                    </div>
+                </div>
+            <!--desktop-->
+                <div class="desktop-sec1-2-right-part">
+                    
+                    <div class="container">
+                        <div class="img-container">
+                            <img src="images/sect-1-2-Photo/HTML.jpg">
+                        </div>
+                        <div class="word">
+                            <h2>學習Html</h2>
+                            <p>主要架構網頁的語法，當中學到網頁的架構組成，網頁的標題及內文、圖片、影片及音源的插入等等。一開始主要使用的框架是Visual Studio，到後來使用GitHub上架網站。</p>
+                            <!--<a class="readme" href="#">Read more</a>-->
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <div class="img-container">
+                            <img src="images/sect-1-2-Photo/css-file.png">
+                        </div>
+                        <div class="word">
+                            <h2>學習Css</h2>
+                            <p>這部分是我學習靜態網站過程中花最長的時間，Css是Html的美化及延伸，主要是網頁的美工，諸多例如排版、字型及響應式網頁的原理及廣泛地仰賴Css程式的架構。</p>
+                            <!--<a class="readme" href="#">Read more</a>-->
+                        </div>
+                    </div>
+
+                    <div class="container-3">
+                        <div class="img-container">
+                            <img src="images/sect-1-2-Photo/JavaScript.jpg">
+                        </div>                
+                        <div class="word">
+                            <h2>學習JavaScript</h2>
+                            <p>JavaScript為製作動態網頁（互動式網頁）的根基，包含觸發JS公式，本網頁的按鍵為互動式網頁一環。</p>
+                            <!--<a class="readme" href="#">Read more</a>-->
+                        </div>
+                    </div>               
+                </div>
+                
+            
+            <!--mobile-->
+                <div class="mobile-sec1-2-right-part">
+                    
+                    <div class="container">
+                        <div class="img-container">
+                            <img src="images/information-orientation-mobile.jpg">
+                        </div>
+                        <div class="word">
+                            <h2>學習Html</h2>
+                            <p>主要架構網頁的語法，當中學到網頁的架構組成，網頁的標題及內文、圖片、影片及音源的插入等等。一開始主要使用的框架是Visual Studio，到後來使用GitHub上架網站。</p>
+                            <!--<a class="readme" href="#">Read more</a>-->
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <div class="img-container">
+                            <img src="images/information-campus-mobile.jpg">
+                        </div>
+                        <div class="word">
+                            <h2>學習Css</h2>
+                            <p>這部分是我學習靜態網站過程中花最長的時間，Css是Html的美化及延伸，主要是網頁的美工，諸多例如排版、字型及響應式網頁的原理及廣泛地仰賴Css程式的架構。</p>
+                            <!--<a class="readme" href="#">Read more</a>-->
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <div class="img-container">
+                        <img src="images/information-guest-lecture-mobile.jpg">
+                        </div>
+                        <div class="word">
+                            <h2>學習JavaScript</h2>
+                            <p>JavaScript為製作動態網頁（互動式網頁）的根基，雖說目前我能寫出靜態網頁，但互動式網頁才是我對網頁前端工程師最主要的定位，亦是我目前正在努力的方向</p>
+                            <!--<a class="readme" href="#">Read more</a>-->
+                        </div>
+                    </div>
+                                
+                </div>
+            </div>
+        </div>
+        <button id="buttonClose">點此收起</button>
+    </div>
+
+<!--section-2-->
+
+    <div id="sec-2" class="section-2">
+        <div class="sec-2-title">
+            <h1>專長</h1>
+        </div>
+        <div class="desktop-sec-2">
+            <table>
+            <tr>
+                <td class="column1"><h2>個性</h2></td>
+                <td class="column2"><h2>技能</h2></td>
+            </tr>
+
+            <tr>
+                <td class="column1">
+                    <ul>
+                        <li>好學習、喜歡挑戰</li>
+                        <li>喜歡生活規律</li>
+                        <li>人好相處、安守本分</li>
+                    </ul>
+                </td>
+
+                <td class="column2">
+                    ◇應用程式
+                    <ul>
+                        <li>前端網頁程式語言：Html、Css、JavaScript，現在的網頁就是使用這些程式語言寫出來的，並架設在GitHub上。</li>
+                        <li>辦公室應用類：Word、PowerPoint、Excel</li>
+                        <li>統計開放軟體：SAS</li>
+                        <li>製圖軟體：AutoCad</li>
+                        <li>地理資訊軟體：GIS</li>
+                    </ul>
+
+                    ◇軟性技能
+                    <ul>
+                        <li>文章寫作及綱要梳理</li>
+                        <li>團隊溝通</li>
+                    </ul>
+                </td>
+            </tr>
+
+            </table>
+        </div>
+    
+        <div class="mobile-sec-2">
+            <h2>個性</h2>
+            <ul>
+                <li>好學習、喜歡挑戰</li>
+                <li>喜歡生活規律</li>
+                <li>人好相處、安守本分</li>
+            </ul>
+            <h2>技能</h2>
+            <p>◇應用程式</p>
+                <ul>
+                    <li>前端網頁程式語言：Html、Css、JavaScript，現在的網頁就是使用這些程式語言寫出來的，並架設在GitHub上。</li>
+                    <li>辦公室應用類：Word、PowerPoint、Excel</li>
+                    <li>統計開放軟體：SAS</li>
+                    <li>製圖軟體：AutoCad</li>
+                    <li>地理資訊軟體：GIS</li>
+                </ul>
+
+            <p>◇軟性技能</p>
+                <ul>
+                    <li>文章寫作及綱要梳理</li>
+                    <li>團隊溝通</li>
+                </ul>
+        </div>
+    
+    </div>
+    
+
+
+<!--section-3-->
+    <div id="sec-3">
+        <div class="section-3">
+            <div class="sec3-title">
+                <h1>未來規劃目標</h1>
+            </div>
+
+            <div class="sec3-introduction">
+                <p>由於剛踏入程式設計師的領域，因此對自己實際適合的程式語言以及其應用方式並不熟悉。可以確定的是，目前為了能製作出動態網頁而繼續努力。但為了更瞭解自己適合的領域，後續還規劃應學習的程式語言，以及我認為能適合的應用範圍。</p>
+            </div>
+        
+            <div class="introductSchedule">
+                <h2>目前學習進度條（點擊顯示）</h2>
+            </div>
+
+            <div class="schedule">
+                <div class="schedule-photo"><image id="schedule-HTML"  src="./images/schedule-module/schedule-HTML.png"></image></div>
+                <div class="schedule-photo"><image id="schedule-css" src="./images/schedule-module/schedule-css.png"></image></div>
+                <div class="schedule-photo"><image id="schedule-JS" src="./images/schedule-module/schedule-JS.png"></image></div>
+                <div class="schedule-photo"><image id="schedule-MySQL" src="./images/schedule-module/schedule-MySQL.png"></image></div>
+                <div class="schedule-photo"><image id="schedule-Python" src="./images/schedule-module/schedule-Python.png"></image></div>
+                <div class="schedule-photo"><image id="schedule-C#" src="./images/schedule-module/schedule-C.png"></image></div>
+
+            </div>
+
+            <div class="sec-3-2">
+                 <div id="sec-3-contain-1" class="container">
+                    <div class="photo-container">
+                        <img src="./images/sec-3-2-Photo/course-HTML-cut.jpg">
+                    </div>
+                    <div class="text-container">
+                        <h2>HTML 已完成內容：</h2>
+                        　Element　網頁的元素，也稱tag<br>
+                        　Structure　網頁的結構<br>
+                        　Document Standards　網頁聲明<br>
+                        　Tables　網頁表格<br>
+                        　Forms　網頁元素中的形式設定<br>
+                        　Semantic HTML　網頁的語意</p>
+                    </div>
+                </div>
+            
+
+                <div id="sec-3-contain-2" class="container">
+                    <div class="photo-container">
+                        <img src="./images/sec-3-2-Photo/curse-css-cut.png">
+                    </div>
+                    <div class="text-container">
+                        <h2>CSS 已完成內容：</h2>
+                        <p>　Selectors and Visual Rules　選擇器及撰寫規則<br>
+                            　Box Model　盒子模型<br>
+                            　Display and Positioning　顯示及定位<br>
+                            　Colors　顏色設定<br>
+                            　Typography　文字排版<br>
+                            　Flex　板模排版<br>
+                            　Grid　格線排版<br>
+                            　Transition　版面變化<br>
+                        </p>
+                    </div>
+                </div>
+
+                <div id="sec-3-contain-3" class="container">
+                    <div class="photo-container">
+                        <img src="./images/sec-3-2-Photo/curse-JS-cut.jpg">
+                    </div>
+                    <div class="text-container">
+                        <h2>JavaScript 已完成內容：</h2>
+                        <p>　Conditionals　條件表達<br>
+                            　Function　公式寫法<br>
+                            　Scope　變量範圍<br>
+                            　Arrays　數列寫法<br>
+                            　Loops　循環列<br>
+                            　Iterators　高階函數<br>
+                            　Objaects　物件寫法<br>
+                            　Classes　分類<br>
+                            　Modules　模組<br>
+                            　Async-Await　異步處理<br>
+                            　Requests　HTTP請求回應<br>
+                        </p>
+                    </div>
+                </div>
+            
+                <div id="sec-3-contain-4" class="container">
+                    <div class="photo-container">
+                        <img src="./images/sec-3-2-Photo/curse-MySQL-cut.jpg">
+                    </div>
+                    <div class="text-container">
+                        <h2>MySQL 未來進行內容：</h2>
+                        <p>Queries<br>
+                            Aggregate Function　函數公式<br>
+                            Multiple Tables　多重表格<br>
+                            
+                        </p>
+                    </div>
+                </div>
+
+                <div id="sec-3-contain-5" class="container">
+                    <div class="photo-container">
+                        <img src="./images/sec-3-2-Photo/course-Python-cut.jpg">
+                    </div>
+                    <div class="text-container">
+                        <h2>Python 未來進行內容：</h2>
+                        <p>　Function　公式使用<br>
+                            　Control-flow　控制流程<br>
+                            　List資料結構處理程序<br>
+                            　Loops　迴圈程式<br>
+                            　Strings　字串物件<br>
+                            　Modules　模組創建<br>
+                            　Dictionaries　未指定變數組創建<br>
+                            　Files　檔案格式轉換<br>
+                            　Classes　各類資料轉換<br>
+                        </p>
+                    </div>
+                </div>
+                
+                <div id="sec-3-contain-6" class="container">
+                    <div class="photo-container">
+                        <img src="./images/crazy-man-dancing-funny-expression.jpg">
+                    </div>
+                    <div class="text-container">
+                        <h2>其他</h2>
+                        <p>學習其他需要由前端轉至後端的程式語言，例如PHP。未來也會持續學習C#等程式，及手機APP程式所需的語言，如Ruby、Kotlin或Swift。
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+<!--section-4--> 
+    <div id="sec-4" class="section-4">
+        <div class="sec4-title">
+            <h1>關於我</h1>
+        </div>
+
+        <div class="sec4-container">
+            <div class="sec4-left-part">
+                <div class="video">
+    <!--重要的-->   <video src="videos/thesis.mp4" controls></video>
+                </div>
+            <!--desktop-->
+                <div class="autobiography">
+                    <h2>自傳</h2>
+                    <p>　　雖然敝人專精於土地規畫之專業，但於29歲時發現自己對程式語言有興趣及喜好，開始學了C##語言寫出點餐介面程式，中途受朋友無私的教導，也成功寫出一個簡單介面的執行程式。但由於當時僅歸類在興趣而非人生必須之專業中，便未放在心上。後來全身投入於土地規畫之工作上，本也應順遂樂於工作中，受主管青睞及栽培，然不幸地因家人生病需照顧，亦難有心思分析及撰寫報告書，故告知原主管並交接辭退工作。照顧家人期間，本人認真思索原工作能否為未來持續性的工作，並同時不間斷地花每日1~2小時學習html、css及JS，於二個月後終於能設計出一份響應式靜態網頁(附於作品集)。基於原本既有的興趣及不斷深造學習的成果下，轉行做工程師的念頭便開始出現。</p>
+                    <p>　　這二個月來主要學習到的內容包含：網頁從無到有的設計、響應式網頁的設計、網頁的發佈、及一些設計應注意的細節。對我來說網頁設計最有趣及困難的點在於：顏色應用、圖片設計及排版的整齊度。</p>
+                    <p>　　我本人也明白程式語言非一蹴可幾，其中還有幾個方向需要學習，對自己未來還想學python、php、MySQL、C##等等的語言，滿足成就自我之方向外，也讓未來的我有更多的能力熟於創造出對大家都有幫助的產品</p>
+                </div>
+            </div>
+        <!--desktop-->
+            <div class="sec4-right-part">
+                <div class="container-color">
+                    <div class="work-experiance">
+                        <h2>工作經歷</h2>
+                        <p>工作資歷5～6年</p>
+                        <ul class=experience>
+                            <li>土地開發人員</li>
+                            <article><p >主要工作內容在於：瞭解地主對土地的開發需求及相關的行政流程法規，提出可行的土地變更或規畫方案。</p></article>
+                            <li>成功大學研究助理</li>
+                            <article><p >當時主要調查大學生選擇交通運具的因素及如何影響其決定，需要進行研究方法架構、資料分析及發表研究等等項目。</p></article>
+                            <li>成功大學行政助理</li>
+                            <article><p >處理研究本身衍伸的人力及行政處理，例如招聘調查人員、進行資料處理及研究開銷報帳等等</p></article>
+                        </ul>
+                        <div>
+                            <a class="104" href="https://pda.104.com.tw/profile/share/1XcxeK3YE0MJ7ood4PDpzN4W3htnD6F4">《詳情見104履歷》</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="education">
+                    <div class="photoAndTitle">
+                        <div class="education-photo"><img src="./images/Cheng-Kung-University-cut.png"></div>
+                        <h2>學歷</h2>
+                    </div>
+                    <div class="education-contain">
+                        <p>國立成功大學 | 都市計劃系　 | 2018畢業</p>
+                        <p>國立成功大學 | 都市計劃學系 | 2011畢業</p>
+                    </div>
+                </div>            
+            </div>
+
+        </div>
+    </div>
+
+<!--section-5-->
+    <div id="sec-5" class="section-5">
+        <h1>聯絡我</h1>
+        <div class="contectMe">
+        <div class="email"><i class="fa fa-envelope" aria-hidden="true"> position01p@gmail.com </i></div>
+        <div class="phone"><i class="fa fa-phone" aria-hidden="true"> 0906-129-775 </i></div>
+        </div>
+    </div>
+
+</div><!--id=section-->
+</body>
+
+
+
+<footer>
+    <div class="footer-container">
+        <div class="left-part">
+            <p>©2020 春威履歷自傳 版權所有</p>
+        </div>
+        <div class="right-part">
+            <p>製作於2020年11月25日</p>
+        </div>
+    </div>
+</footer>
+<script src='./JavaScript/main.js'></script>
+    </div>
