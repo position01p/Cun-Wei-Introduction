@@ -1093,11 +1093,12 @@ object{
 
         .sec4-right-part .work-experiance h2,.sec4-right-part .work-experiance p{
             color: rgb(59, 59, 59);
-            margin-left:10%;
+            margin:auto 10% auto 5%;
         }
         
         .sec4-right-part .work-experiance ul{
             color: rgb(59, 59, 59);
+            margin-left:10%;
         }
 
         
